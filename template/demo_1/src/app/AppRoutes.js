@@ -57,9 +57,8 @@ class AppRoutes extends Component {
 
 
           <Route path="/charts/chart-js" component={ ChartJs } />
+          <Route exact path="/user-pages/login-1" component={ Login } />
 
-
-          <Route path="/user-pages/login-1" component={ Login } />
           <Route path="/user-pages/register-1" component={ Register1 } />
           <Route path="/user-pages/lockscreen" component={ Lockscreen } />
 
@@ -69,7 +68,7 @@ class AppRoutes extends Component {
           <Route path="/general-pages/blank-page" component={ BlankPage } />
 
 
-          <Redirect to="/dashboard" />
+          <Redirect to="/user-pages/login-1" />
         </Switch>
       </Suspense>
     );
